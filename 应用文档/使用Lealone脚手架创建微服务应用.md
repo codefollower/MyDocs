@@ -34,15 +34,3 @@ lealone
 
 http://localhost:9000/
 
-
-## 创建服务
-
-cd target\hello-1.0.0\bin
-
-runSqlScript
-
-
-## 调用服务
-
-直接打开: http://localhost:9000/service/hello_service/hello?name=zhh
-

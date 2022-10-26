@@ -12,26 +12,19 @@
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-service</artifactId>
-            <version>5.0.0-SNAPSHOT</version>
+            <version>5.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-vertx</artifactId>
-            <version>5.0.0-SNAPSHOT</version>
+            <version>5.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-javascript</artifactId>
-            <version>5.0.0-SNAPSHOT</version>
+            <version>5.0.0</version>
         </dependency>
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </repository>
-    </repositories>
 ```
 
 其中的 lealone-service 表示引入 Lealone 微服务框架，lealone-vertx 是把 vertx 当成 http server，而 lealone-javascript 是对 JavaScript 的支持。
