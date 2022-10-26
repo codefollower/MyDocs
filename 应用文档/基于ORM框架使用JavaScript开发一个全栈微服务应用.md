@@ -33,7 +33,7 @@
             <version>5.0.0</version>
         </dependency>
 	
-	<!-- 启用对 JavaScript 的支持。
+	<!-- 启用对 JavaScript 的支持 -->
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-javascript</artifactId>
@@ -105,7 +105,7 @@ create service if not exists user_service (
 language 'js' implement by './js/user_service.js';
 ```
 
-这一步用于描述一个服务的相关信息，比如它有哪些可调用的方法，并指定服务实现的 js 文件。
+这一步用于描述一个服务的相关信息，比如它有哪些可调用的方法，并指定服务实现相关的 js 文件。
 通过 create service 语句创建的服务在内部会被托管，
 服务的注册与发现功能已经内置在框架当中，不需要再依赖其他第三方组件。
 
@@ -142,7 +142,7 @@ function findByName(name) {
     return User.dao.where().name.eq(name).findOne();
 }
 ```
-服务实现类就是一个最普通的 JavaScript 代码，服务框架对服务实现类是无侵入的。
+服务实现类就是最普通的 JavaScript 代码，服务框架对服务实现类是无侵入的。
 
 这里也演示了 Lealone ORM 框架的基本用法，ORM 框架对应用代码也是无侵入的。
 
@@ -262,9 +262,11 @@ public class JsDemo {
 在 IDE 中直接运行 JsDemo
 
 在前端调用 hello_service 服务，用以下 url:
+
 http://localhost:9000/service/hello_service/hello?name=zhh
 
 在前端调用 user_service 服务，请在浏览器中打开下面这个 url 进行测试:
+
 http://localhost:9000/fullStack.html
 
 
